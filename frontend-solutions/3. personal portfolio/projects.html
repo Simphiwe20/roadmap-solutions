@@ -4,11 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is my basic website.">
+    <meta name="keywords" content="software developer, web development, neutrinos">
+    <meta name="robots" content="index, follow">
+
     <title>Basic HTML Website</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="shortcut icon" href="./cv.jpg" type="image/x-icon">
+
+    <meta property="og:title" content="Simphiwe Nene's CV" />
+    <meta property="og:description" content="This is my single page cv" />
+    <meta property="og:image" content="./cv.jpg" />
+    <meta property="og:url" content="http://localhost:5500/index.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_ZA" />
 </head>
 
 <body>
-    <header style="display: flex; justify-content: space-between; align-items: center;">
+    <header class="flex spacebetween-center">
         <h2>Simphiwe Makhathini</h2>
         <nav>
             <a href="./index.html">Home</a>
@@ -22,34 +35,34 @@
             <h2>I been building</h2>
             <p>These are all the projects i have build</p>
         </center>
-        <div style="display: flex; gap: 6px;">
-            <section style="width: 50%;">
+        <div class="flex gap-6px">
+            <section class="half-width">
                 <h2>HTML, CSS and JS</h2>
-                <ul style="padding-left: 15px;">
+                <ul class="padding-left-15px">
                     <li>Basic Calculator</li>
                     <p>This is a basic calculator that allows users to perform basic arithmetic operations</p>
                 </ul>
-                <ul style="padding-left: 15px;">
+                <ul class="padding-left-15px">
                     <li>Weather App</li>
                     <p>This is an app that allows users to search location to get that location's weather and shows the
                         current location's weather focast</p>
                 </ul>
-                <ul style="padding-left: 15px;">
+                <ul class="padding-left-15px">
                     <li>Web based Portfolio</li>
                     <p>This website shows my about, Experience and educations</p>
                 </ul>
             </section>
             <section style="width: 50%;">
                 <h2>MEAN Stack</h2>
-                <ul style="padding-left: 15px;">
+                <ul class="padding-left-15px">
                     <li>MediCare System</li>
                     <p>This system allows users to make booking appointments</p>
                 </ul>
-                <ul style="padding-left: 15px;">
+                <ul class="padding-left-15px">
                     <li>Claim Management Systems</li>
                     <p>This system allows users to make claims effortlessly </p>
                 </ul>
-                <ul style="padding-left: 15px;">
+                <ul class="padding-left-15px">
                     <li>Operations Systems</li>
                     <p>This system allows users to perform business operations in a company like making leaves, request
                         passport</p>
