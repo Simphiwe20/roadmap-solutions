@@ -7,8 +7,10 @@
     <meta name="description" content="This is my basic website.">
     <meta name="keywords" content="software developer, web development, neutrinos">
     <meta name="robots" content="index, follow">
+
     <title>Basic HTML Website</title>
     <link rel="shortcut icon" href="./cv.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./styles.css">
 
     <meta property="og:title" content="Simphiwe Nene's CV" />
     <meta property="og:description" content="This is my single page cv" />
@@ -19,7 +21,7 @@
 </head>
 
 <body>
-    <header style="display: flex; justify-content: space-between; align-items: center;">
+    <header class="flex spacebetween-center">
         <h2>Simphiwe Makhathini</h2>
         <nav>
             <a href="./index.html">Home</a>
@@ -32,14 +34,14 @@
         <center>
             <h2>Please reach out</h2>
         </center>
-        <div style="display: flex; gap: 6px;">
-            <section style="width: 33%;">
+        <div class="flex gap-6px">
+            <section class="width-33">
                 <h2>Contact details</h2>
                 <p>Cellphone No: 062 810 7203</p>
                 <p>Alt No: 083 730 3382</p>
                 <p>Email address: gsimphiwe212@gmail.com</p>
             </section>
-            <section style="width: 33%;">
+            <section class="width-33">
                 <h2>Address details</h2>
                 <address>
                     <p>Tiberius 801</p>
@@ -48,13 +50,23 @@
                     <p>2001</p>
                 </address>
             </section>
-            <section style="width: 33%;">
+            <section class="width-33">
                 <h2>Socials</h2>
                 <p>Instagram: <a href="https://www.instagram.com/ebouy_gift/">Ebouy_Gift</a></p>
-                <p>Linkedin: <a href="https://www.linkedin.com/in/simphiwe-gift-nene-2460151a2/">Simphiwe Gift Nene</a></p>
+                <p>Linkedin: <a href="https://www.linkedin.com/in/simphiwe-gift-nene-2460151a2/">Simphiwe Gift Nene</a>
+                </p>
                 <p>GitHub: <a href="https://github.com/Simphiwe20/">Simphiwe Makhathini</a></p>
             </section>
         </div>
+        <h3 class="no-margin">Say, Hi!</h3>
+        <p class="no-margin">You can comment or send a messege , by  filling the form below and click send</p>
+        <form>
+            <div class="half-width gap-6px flex column">
+                <input type="text" placeholder="simphiwe@gmail.com">
+                <input type="text" placeholder="0628107203">
+                <button class="width-33">Send</button>
+            </div>
+        </form>
     </main>
 </body>
 
