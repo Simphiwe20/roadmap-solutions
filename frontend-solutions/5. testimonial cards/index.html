@@ -1,11 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=star" />
     <title>Testimonial card</title>
 </head>
-<body>
-    
+
+<body class="poppins">
+    <header class="flex center-center">
+        <h1>All Our Testimonials</h1>
+    </header>
+    <main class=" flex column gap-1em">
+        <section class="flex spacebetween">
+            <article class="testimonial-1 width-48_5">
+                <div class="bg-black border-r-15px padding-10px">
+                    <p class="color-white">A lifesaver for self-learners!</p>
+                    <p class="color-white">Roadmap.sh gave me the direction I needed to navigate the overwhelming world
+                        of web development. It’s like having a personal mentor guiding every step. Highly recommended!
+                    </p>
+                </div>
+                <div class="flex start-center gap-1em padding-0px-10px  margin-top-10px">
+                    <div class="round-img">
+                        <img src="./images/testimonial 1.jpg" alt="" srcset="">
+                    </div>
+                    <div>
+                        <p class="no-margin">Alex M.</p>
+                        <small>Junior Frontend Developer</small>
+                    </div>
+                </div>
+            </article>
+            <article class="testimonial-2 border-r-15px width-48_5">
+                <div class="padding-10px">
+                    <p>The clarity is unmatched. As someone transitioning into tech from another field, Roadmap.sh made
+                        it easy to understand what to focus on and when. I landed my first cloud computing role thanks
+                        to their resources!</p>
+                </div>
+                <div class="flex start-center gap-1em padding-0px-10px  margin-top-10px">
+                    <div class="round-img">
+                        <img src="./images/testimonial 2.jpg" alt="" srcset="">
+                    </div>
+                    <div>
+                        <p class="no-margin">Priya R.</p>
+                        <small>Cloud Engineer</small>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section>
+            <article class="flex height-245px gap-1em">
+                <div class="img-container">
+                    <img class="border-r-15px full-height" src="./images/testimonial 3.jpg" alt="" srcset="">
+                </div>
+                <div class="bg-black border-r-15px padding-10px">
+                    <div class="ratings">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                    </div>
+                    <h4 class="no-margin color-white">Chris W.</h4>
+                    <small> Software Team Lead</small>
+                    <p class="color-white">This is my go-to resource for team onboarding. I’ve used Roadmap.sh to train
+                        new hires in networking and backend development. It’s comprehensive, well-structured, and cuts
+                        out all the fluff.
+                    </p>
+                </div>
+
+            </article>
+        </section>
+    </main>
+
 </body>
+
 </html>

@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    /* margin: 0px; */
+}
+
+/* size styles */
+.full-width {
+    width: 100%;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.half-width {
+    width: 50%;
+}
+
+.width-48_5 {
+    width: 48.5%;
+}
+
+.width-40 {
+    width: 40%;
+}
+
+.height-245px {
+    height: 245px;
+}
+
+/*flex styles*/
+.flex {
+    display: flex;
+}
+
+.center-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.spacebetween {
+    justify-content: space-between;
+}
+
+.start-center {
+    align-items: center;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.gap-1em {
+    gap: 1em;
+}
+
+/* color styles */
+.bg-black {
+    background-color: rgb(30 30 30);
+}
+
+.poppins {
+    font-family: "Poppins", serif;
+    font-style: normal;
+}
+
+/* padding and margin styles */
+
+.padding-10px {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.padding-0px-10px {
+    padding: 0px 10px;
+}
+
+.border-r-15px {
+    border-radius: 15px
+}
+
+.no-margin {
+    margin: 0px;
+}
+
+.margin-top-10px {
+    margin-top: 10px;
+}
+
+/* Testionial classes */
+.testimonial-1 {
+}
+
+.testimonial-2 {
+    border: 2px black solid;
+}
+
+/* font styles */
+.color-white {
+    color: white;
+}
+
+
+/* image styles */
+.round-img {
+    height: 50px;
+    width: 45px;
+    img {
+        border-radius: 50%;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.img-container {
+    img {
+        width: 350px;
+    }
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 100, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  color: yellow;
+}
