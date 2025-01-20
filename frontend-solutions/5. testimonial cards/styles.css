@@ -130,7 +130,44 @@ body {
 }
 
 /* text styles */
-
 .text-center {
     text-align: center;
+}
+
+/* random styles */
+.icon {
+    font-weight: 700;
+    font-size: xx-large;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+/* Position styles */
+
+.relative {
+    position: relative;
+}
+
+.right-img {
+    position: absolute;
+    right: 25px;
+}
+
+.left-img {
+    position: absolute;
+    left: 25px;
+}
+
+.profile-img-opac {
+    height: 43px;
+    width: 38px;
+    opacity: 0.3;
+}
+
+
+img {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
 }
