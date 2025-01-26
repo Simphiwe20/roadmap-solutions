@@ -4,36 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
     <title>Accessible Form UI</title>
 </head>
 
-<body>
-    <form action="">
-        <div>
-            <label for="fullName">Full name
-                <input id="fullName" type="text" placeholder="What should we call you">
-            </label>
+<body class="flex center-center">
+    <main class="width-90 height-90 flex gap-05em">
+        <form action="" class="half-width">
+            <div class="flex column full-width gap-1em">
+                <div class="flex column gap-05em">
+                    <label for="fullName">Full name</label>
+                    <input id="fullName" type="text" placeholder="What should we call you">
+                </div>
+                <div class="flex column gap-05em">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="john@doe.com">
+                </div>
+                <div class="flex column gap-05em">
+                    <label for="password">password</label>
+                    <input type="text" placeholder="****" id="password">
+                </div>
+                <div class="flex column gap-05em">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="text" placeholder="****" id="confirmPassword">
+                </div>
+                <div>
+                    <button>Update profile</button>
+                </div>
+            </div>
+        </form>
+        <div class="half-width flex column start-center">
+            <div class="completeness-container flex center-center">
+                <p>65%</p>
+            </div>
+            <h4>Profile Completeness</h4>
+            <div class="flex center-start full-width">
+                <div class="width-60 flex center-start task-container">
+                    <div>
+                        <p>Create profile</p>
+                        <p>Update Roadmap Progress</p>
+                        <p>Setup Public Profile</p>
+                        <p>Complete your first project</p>
+                        <p>Invite your Friends</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div>
-            <label for="email">Email
-                <input type="text" id="email" placeholder="john@doe.com">
-            </label>
-        </div>
-        <div>
-            <label for="password">password
-                <input type="text" placeholder="****" id="password">
-            </label>
-
-        </div>
-        <div>
-            <label for="confirmPassword">Confirm Password
-                <input type="text" placeholder="****" id="confirmPassword">
-            </label>
-        </div>
-        <div>
-            <button>Update profile</button>
-        </div>
-    </form>
+    </main>
 </body>
 
 </html>
