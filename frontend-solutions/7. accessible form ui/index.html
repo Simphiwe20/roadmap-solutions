@@ -4,29 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Accessible form UI" />
+    <meta property="og:description" content="This is a Accessible form UI" />
+    <meta property="og:url" content="http://localhost:5500/index.html" />
+    <meta property="og:locale" content="en_ZA" />
+    <meta name="description" content="This is an Accessible form UI">
+    
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=visibility" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=visibility_off" />
+
     <title>Accessible Form UI</title>
 </head>
 
 <body class="flex center-center">
     <main class="width-90 height-90 flex gap-05em">
-        <form action="" class="half-width">
+        <form action="" class="half-width" >
             <div class="flex column full-width gap-1em">
                 <div class="flex column gap-05em">
-                    <label for="fullName">Full name</label>
+                    <label tabindex=0 for="fullName">Full name</label>
                     <input id="fullName" type="text" placeholder="What should we call you">
                 </div>
                 <div class="flex column gap-05em">
-                    <label for="email">Email</label>
+                    <label tabindex=0 for="email">Email</label>
                     <input type="text" id="email" placeholder="john@doe.com">
                 </div>
                 <div class="flex column gap-05em">
-                    <label for="password">password</label>
-                    <input type="text" placeholder="****" id="password">
+                    <label tabindex=0 for="password">Password</label>
+                    <div class="flex center-center height-46px  border-1px border-radius-3px pwd-container" tabindex="0" >
+                        <input type="text" placeholder="****" id="password" class="flex-1 border-none border-radius-3px">
+                        <span class="material-symbols-outlined center-content pointer margin-r-5px " title="Show password">
+                            visibility
+                        </span> 
+                    </div>
                 </div>
                 <div class="flex column gap-05em">
-                    <label for="confirmPassword">Confirm Password</label>
-                    <input type="text" placeholder="****" id="confirmPassword">
+                    <label tabindex=0 for="password">Confirm passsword</label>
+                    <div class="flex center-center height-46px  border-1px border-radius-3px pwd-container" tabindex=0 >
+                        <input type="text" placeholder="****" id="password" class="flex-1 border-none border-radius-3px">
+                        <span class="material-symbols-outlined center-content pointer margin-r-5px " title="Show password">
+                            visibility
+                        </span> 
+                    </div>
                 </div>
                 <div>
                     <button>Update profile</button>
