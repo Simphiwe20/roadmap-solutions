@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-body, html {
+body,
+html {
     height: 100%;
     width: 100%;
     margin: 0px;
@@ -19,6 +20,10 @@ body, html {
     height: 90%;
 }
 
+.height-46px {
+    height: 46px;
+}
+
 .width-90 {
     width: 90%;
 }
@@ -29,6 +34,10 @@ body, html {
 
 .flex {
     display: flex;
+}
+
+.flex-1 {
+    flex: 1;
 }
 
 .column {
@@ -70,9 +79,10 @@ input {
 .task-container {
     background-color: lightgray;
     border-radius: 10px;
+
     p:nth-child(-n+3) {
         text-decoration: line-through;
-      }
+    }
 }
 
 button {
@@ -83,4 +93,40 @@ button {
     width: 40%;
     cursor: pointer;
     font-size: larger
+}
+
+/* Box model */
+
+.border-none {
+    border: none
+}
+
+.center-content {
+    align-content: center;
+}
+
+.border-1px {
+    border: 1px black solid;
+}
+
+.border-radius-3px {
+    border-radius: 3px
+}
+
+.margin-r-5px {
+    margin-right: 5px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.pwd-container {
+    input:focus {
+        outline: none;
+    }
+}
+
+.pwd-container:focus {
+    outline: solid black 1.6px;
 }
