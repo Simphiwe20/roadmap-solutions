@@ -1,0 +1,29 @@
+
+body, html, main {
+    height: 100vh;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.width-30 {
+    width: 32.5%;
+}
+
+/* flex styles */
+.flex {
+    display: flex;
+}
+
+.flex-shrink-none {
+    flex-shrink: 0;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.gap-10px {
+    gap: 10px;
+}
