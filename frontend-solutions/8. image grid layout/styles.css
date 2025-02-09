@@ -7,13 +7,17 @@ body, html, main {
     width: 100%;
 }
 
-.width-30 {
-    width: 32.5%;
+.width-48 {
+    width: 48%;
 }
 
 /* flex styles */
 .flex {
     display: flex;
+}
+
+.flex-1 {
+    flex: 1;
 }
 
 .flex-shrink-none {
@@ -22,6 +26,10 @@ body, html, main {
 
 .flex-wrap {
     flex-wrap: wrap;
+}
+
+.column {
+    flex-direction: column;
 }
 
 .gap-10px {
