@@ -1,0 +1,116 @@
+.flex {
+    display: flex;
+}
+
+.end-center {
+    justify-content: end;
+    align-items: center;
+}
+
+.gap1em {
+    gap: 1em;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.relative {
+    position: relative;
+}
+
+.tooltip-1 {
+    display: inline-block;
+    background-color: grey;
+    border-radius: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+    position: absolute;
+    top: -14px;
+    left: 964px;
+    visibility: hidden;
+}
+
+.tooltip-2 {
+    display: inline-block;
+    background-color:lightblue;;
+    border-radius: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 45px;
+    visibility: hidden;
+
+}
+
+.tooltip-3 {
+    background-color: #211121;
+    border-radius: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+    display: inline-block;
+    color: white;
+    position: absolute;
+    top: -13px;
+    left: 1056px;
+    visibility: hidden;
+
+}
+
+
+
+.curve-1 {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid grey;
+    top: 25px;
+    left: 151px;
+}
+
+
+
+.curve-2 {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid lightblue;
+    top: -8px;
+    left: 150px;
+}
+
+
+
+.curve-3 {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #211121;
+    top: 27px;
+    left: 138px;
+
+}
+
+.home:hover {
+    .tooltip-1 {
+        visibility: visible;
+    }
+}
+
+.project:hover {
+    .tooltip-2 {
+        visibility: visible;
+    }
+}
+
+.blog:hover {
+    .tooltip-3 {
+        visibility: visible;
+    }
+}
