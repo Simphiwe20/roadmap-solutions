@@ -1,3 +1,7 @@
+body {
+    margin: 0px;
+}
+
 .flex {
     display: flex;
 }
@@ -27,19 +31,23 @@
     box-sizing: border-box;
     position: absolute;
     top: -14px;
-    left: 964px;
+    left: -144px;
     visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s linear;
 }
 
 .tooltip-2 {
     display: inline-block;
-    background-color:lightblue;;
+    background-color: lightblue;
     border-radius: 10px;
     padding: 5px;
     box-sizing: border-box;
     position: absolute;
-    top: 45px;
+    top: 40px;
     visibility: hidden;
+    left: -67px;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s linear;
+
 
 }
 
@@ -52,8 +60,9 @@
     color: white;
     position: absolute;
     top: -13px;
-    left: 1056px;
+    left: -141px;
     visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s linear;
 
 }
 
@@ -80,7 +89,8 @@
     border-right: 10px solid transparent;
     border-bottom: 10px solid lightblue;
     top: -8px;
-    left: 150px;
+    left: 84px;
+
 }
 
 
@@ -97,20 +107,44 @@
 
 }
 
+.home {
+    position: relative;
+}
+
+.project {
+    position: relative;
+}
+
+.blog {
+    position: relative;
+}
+
 .home:hover {
+    text-decoration: underline;
+
     .tooltip-1 {
         visibility: visible;
     }
 }
 
 .project:hover {
+    text-decoration: underline;
+
     .tooltip-2 {
         visibility: visible;
     }
 }
 
 .blog:hover {
+    text-decoration: underline;
+
     .tooltip-3 {
         visibility: visible;
     }
+}
+
+.toolbar {
+    background-color: brown;
+    padding: 10px;
+    box-sizing: border-box;
 }
