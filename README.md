@@ -11,3 +11,4 @@ To view a specific project click on it folder and you will find it there
     7. Accessible form UI: https://roadmap.sh/projects/accessible-form-ui
     8. Image grid layout: https://roadmap.sh/projects/image-grid
     9. Tooltip UI: https://roadmap.sh/projects/tooltip-ui
+    10. Tabs: https://roadmap.sh/projects/simple-tabs
