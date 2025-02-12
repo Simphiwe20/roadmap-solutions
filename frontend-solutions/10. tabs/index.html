@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Tabs</title>
+</head>
+<body>
+    <header>
+        <h2>This is my Tabs project</h2>
+    </header>
+    <main>
+        <div class="tabs flex spacebetween-center">
+            <p id="item-1"  data-tab="tab-1" class="width-25 pointer tab">Introductions</p>
+            <p id="item-2" data-tab="tab-1" class="width-25 pointer tab">Projects</p>
+            <p id="item-3" data-tab="tab-1" class="width-25 pointer tab">Blogs</p>
+            <p id="item-4" data-tab="tab-1" class="width-25 pointer tab">Contacts</p>
+        </div>
+        <div class="content-container">
+            <div id="content">
+                <p>This is an introductions</p>
+            </div>
+            <div id="content" hidden>
+                <p>This is all my projects</p>
+            </div>
+            <div id="content" hidden>    
+                <p>This is my blogs tab</p>
+            </div>
+            <div id="content" hidden>
+                <p>This is my contacts tab</p>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="./script.js"></script>
+</body>
+</html>
