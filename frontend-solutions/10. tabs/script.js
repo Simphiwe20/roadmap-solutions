@@ -1,19 +1,22 @@
 const tabs = document.querySelectorAll(".tab")
 const contents = document.querySelectorAll("#content")
+const previousIndex = undefined
 
 tabs.forEach((tab, indx) => {
     tab.addEventListener("click", (Ev) => {
         contents.forEach((content, _index) => {
-            console.log("HIDDEN: ", content.getAttribute("hidden") != null)
-            let isToHide = content.getAttribute("hidden") != null && _index == indx
-            let isToUnhide = content.getAttribute("hidden") == null
-            if (isToHide) {
-                console.log("contents: ", contents)
-                content.setAttribute("hidden", true)
+            console.log("HIDDEN: ", content.classList.value)
+            let isToHide = content.classList.value.includes('display-block')
+            let isToUnhide = content.classList.value.includes('display-none') && _index == indx
+            if (isToHide && !(previousIndex == _index && isToHide)) {
+                // console.log("contents: ", contents)
+                content.classList.add("display-none")
+                content.classList.remove("display-block")
                 debugger
             } else if (isToUnhide) {
                 console.log("contents: ", contents)
-                content.removeAttribute("hidden")
+                content.classList.remove("display-none")
+                content.classList.add("display-block")
                 debugger
 
             }
