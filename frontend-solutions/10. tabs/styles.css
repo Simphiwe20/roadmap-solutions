@@ -22,10 +22,21 @@ body {
     cursor: pointer;
 }
 
-.tab:hover{
+.tab:hover {
     background-color: darkgray;
 }
 
 .display-none {
     display: none;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    /* pointer-events: none; */
+}
+
+.display-block {
+    display: block;
+    max-height: 200px; /* Adjust this based on content size */
+    opacity: 1;
+    transform: translateY(0);
 }
