@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Bubbles&display=swap');
+
+body {
+    font-family: "Poppins", serif;
+    position: relative;
+    margin: 0px;
+}
+
+.main-container {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+}
+
+.spacebetween {
+    justify-content: space-between;
+}
+
+.center-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.popUp-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: #fbe5c8;
+    opacity: 0.95;
+}
+
+.popUp {
+    display: inline-block;
+    background-color: burlywood;
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    right: 0px;
+    bottom: 60px;
+}
+
+.popUp {
+    p {
+        inline-size: 175px;
+    }
+}
+ 
+
+.close {
+    cursor: pointer;
+}
+
+.absolute {
+    position: absolute;
+    right: 0px;
+    bottom: 90px;
+}
+
+.close:hover {
+    cursor: pointer;
+    border-radius: 50%;
+    /* background-color: brown; */
+}
+
+button {
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+button:hover {
+    background: #fbe5c8;
+}
