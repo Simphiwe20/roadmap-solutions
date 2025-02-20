@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=keyboard_arrow_down" />
+    <link rel="stylesheet" href="./styles.css">
+    <title>Accordion</title>
+</head>
+<body>
+    <header>
+        <h1>Tech frequently asked questions</h1>
+        <p>These are <b>(IT)</b> frequently asked questions</p>
+    </header>
+    <main>
+        <div class="dev-container">
+            <h2>Category: Web Development</h2>
+            <div class="accordion">
+                <div class="title flex spacebetween-center">
+                    <h3>What is Angular used for?</h3>
+                    <span id="arrow-down" class="material-symbols-outlined pointer">keyboard_arrow_down</span>
+                </div>
+                <p id="answer" class="answer margin-5px">Angular is a TypeScript-based framework used for building dynamic and scalable web applications. It provides features like two-way data binding, dependency injection, and modular development.</p>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="./script.js"></script>
+</body>
+</html>
