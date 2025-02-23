@@ -14,3 +14,4 @@ To view a specific project click on it folder and you will find it there
     10. Tabs: https://roadmap.sh/projects/simple-tabs
     11. Cookie consent: https://roadmap.sh/projects/cookie-consent
     12. Restricted textarea: https://roadmap.sh/projects/restricted-textarea
+    13. Accordion: https://roadmap.sh/projects/accordion
