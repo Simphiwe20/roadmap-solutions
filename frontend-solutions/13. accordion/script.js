@@ -36,10 +36,8 @@ const addEv = (indx, answerRef) => {
     arrow.addEventListener("click", Ev => {
         if (answer.style.display == "none") {
             answer.style.display = "block"
-            arrow.innerHTML = "keyboard_arrow_down"
         } else {
             answer.style.display = "none"
-            arrow.innerText = "keyboard_arrow_up"
         }
     })
 }
