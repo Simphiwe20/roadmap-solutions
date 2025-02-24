@@ -1,11 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/js-datepicker/dist/datepicker.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=calendar_month" />
+    <link rel="stylesheet" href="./styles.css">
     <title>Age calculator</title>
 </head>
+
 <body>
-    
+    <main class="flex center-start">
+        <div class="width-50 flex column center-center">
+            <h1>Age calculator</h1>
+            <form action="" class="full-width">
+                <p>Enter your birth date:</p>
+                <div class="width-60 flex input-container spacebetween-center">
+                    <input  id="datePicker" title="Click to pick date" type="text" class="width-50" placeholder="MM/DD/YYYY" readonly>
+                    <span class="material-symbols-outlined">calendar_month</span>
+                </div>
+                <button>Calculate</button>
+                <p id="ageRes"></p>
+            </form>
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/js-datepicker"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/luxon/3.4.3/luxon.min.js"></script>
+
+    <script>
+        datepicker("#datePicker", {
+        formatter: (input, date, instance) => 
+        { input.value = date.toLocaleString().split(",")[0]},
+        maxDate: new Date()
+    })
+    </script>
+
+    <script type="module" src="./script.js"></script>
 </body>
+
 </html>
