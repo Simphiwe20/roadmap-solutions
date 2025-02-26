@@ -1,3 +1,6 @@
+@mixin margin-ver($top: 0px , $btm: 5px) {
+    margin: $top 5px $btm 5px;
+}
 
 .width-40 {
     width: 40%;  
@@ -15,8 +18,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @include margin-ver($top: 5px, $btm: 5px);
+
 }
 
 .border-2px {
     border: 2px solid grey;
+}
+
+.margin-5px {
+    @include margin-ver($top: 5px);
+}
+
+.btn-container {
+    @include margin-ver();
 }

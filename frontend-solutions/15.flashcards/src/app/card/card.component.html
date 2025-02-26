@@ -1,12 +1,17 @@
-<div class=" flex column gap-5px border-r-10px border-2px padding-5px full-height">
-    <div class="item-container flex-1 border-r-10px text-center bg-lightblue">
-        <div class="width-40">
-            <h2>{{flashCards[0].question}}</h2>
+<mat-card class="flex column full-height color-white">
+    <div class="item-container flex-1 text-center bg-dark border-r-5px">
+        <div *ngIf="!this.isComplete">
+            <h2 *ngIf="isQuestion">{{currentItem.question}}</h2>
+            <h2 *ngIf="!isQuestion">{{currentItem.answer}}</h2>
+        </div>
+        <div *ngIf="this.isComplete">
+            <h2 class="text-center">Complete</h2>
+            <p class="pointer" (click)="startAgain()">Start again</p>
         </div>
     </div>
-    <div class="btn-container spacebetween-center padding-0px-5px flex bg-lightblue border-r-10px">
-        <p class="width-120px pointer">< Previous</p>
-        <p class="width-120px pointer text-center">Shiw answer</p>
-        <p class="width-120px pointer text-end">Next ></p>
+    <div *ngIf="!this.isComplete" class="btn-container spacebetween-center padding-0px-5px flex bg-dark border-r-5px">
+        <p class="width-120px pointer"  (click)="previous()">< Previous</p>
+        <p class="width-120px pointer text-center" (click)="toggleShow()">Show {{!isQuestion ? "question" : "answer" }}</p>
+        <p class="width-120px pointer text-end" (click)="next()">Next ></p>
     </div>
-</div>
+</mat-card>

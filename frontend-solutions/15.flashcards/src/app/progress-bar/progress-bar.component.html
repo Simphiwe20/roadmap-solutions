@@ -1,1 +1,4 @@
-<mat-progress-bar  mode="determinate" value="40"></mat-progress-bar>
+<div class="flex center-center">
+    <mat-progress-bar  mode="determinate" [value]="progressVal"></mat-progress-bar>
+    <p class="percent" [ngClass]="{'bg-dark': isComplete}">{{progress}}%</p>
+</div>

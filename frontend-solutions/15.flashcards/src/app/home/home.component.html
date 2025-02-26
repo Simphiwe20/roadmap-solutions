@@ -1,6 +1,6 @@
 <div class="flex center-center full-height">
-    <div class="half-width flex gap-5px center-center column full-height">
-        <app-progress-bar class="full-width"></app-progress-bar>
-        <app-card></app-card>
+    <div class="flex gap-5px half-width center-center column full-height">
+        <app-progress-bar class="full-width" [progressVal]="progressVal"></app-progress-bar>
+        <app-card (progress)="getProgess($event)" class="full-width"></app-card>
     </div>
 </div>

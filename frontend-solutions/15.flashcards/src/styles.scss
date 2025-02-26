@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Bubbles&display=swap');
 @import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
 
+$primary-bg: #424242;
+
 body {
     font-family: "Poppins", serif;
     height: 100vh;
@@ -68,9 +70,18 @@ app-card {
     background-color: lightblue;  
 }
 
+.bg-dark {
+    background-color: $primary-bg;  
+}
+
+.color-white {
+    color: white;
+}
+
+
 // Box model styles
-.border-r-10px {
-    border-radius: 10px;
+.border-r-5px {
+    border-radius: 5px;
 }
 
 .padding-5px {
@@ -83,9 +94,36 @@ app-card {
     box-sizing: border-box;
 }
 
+.margin-b {
+    margin-bottom: 5px;
+}
+
 // common styles
 .pointer {
     cursor: pointer;
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+// Materials styles
+.mdc-linear-progress {
+    height: 23px !important;
+    border-top-left-radius: 5px !important;
+    border-bottom-left-radius: 5px !important;
+}
+
+.mdc-linear-progress__bar-inner {
+    border-top-width: var(--mdc-linear-progress-track-height, 23px) !important;
+    border-color: var(--mdc-linear-progress-active-indicator-color, #424242) !important;
+}
+
+.mat-mdc-progress-bar {
+    --mdc-linear-progress-active-indicator-color: #424242 !important;
+}
+
+.mat-mdc-progress-bar .mdc-linear-progress__buffer-bar {
+    background-color: #424242 !important;
+    opacity: 0.24 !important;
+}
+
+.mat-mdc-card {
+    background-color: rgb(66, 66, 66, 0.24) !important;
+}
