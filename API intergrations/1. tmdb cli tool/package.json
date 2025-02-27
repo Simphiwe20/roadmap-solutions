@@ -1,0 +1,11 @@
+{
+  "name": "16.-tmdb-cli-tool",
+  "version": "1.0.0",
+  "description": "This is a node js cli application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Simphiwe Makhathini (Nene)",
+  "license": "ISC"
+}
