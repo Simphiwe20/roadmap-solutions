@@ -1,0 +1,17 @@
+# roadMap_TMDB CLI APP
+
+To go through the project requirement please click this: https://roadmap.sh/projects/tmdb-cli
+
+To run this application, please make sure that you have an IDE or a terminal to run it.
+
+Steps
+    1. After you have cloned the app.
+    2. cd to it, into 1. tmdb-cli app
+    3. run npm install
+    4. run npm link(Links you app globally so it can be run on any terminal or directory locally)
+    5. When it is done you can any of the below command on your terminal terminal
+        5.1 commands:
+            tmdb-app --type playing
+            tmdb-app --type popular
+            tmdb-app --type top"
+            tmdb-app --type upcoming
